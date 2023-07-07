@@ -9,7 +9,7 @@
                 <div class="form-group mt-2">
                     <select name="attribute_id" class="form-select">
                         @foreach (\App\Models\Attribute::get() as $attribute)
-                                <option value={{$attribute->id}} @if ($attribute->id==$attribute_value->attribute_id) select @endif> {{$attribute_value->title}} </option>
+                                <option value={{$attribute->id}} @if ($attribute->id==$attribute_value->attribute_id) select @endif> {{$attribute->title}} </option>
                         @endforeach
                     </select>
                 </div>
