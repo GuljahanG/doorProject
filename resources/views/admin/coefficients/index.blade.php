@@ -8,8 +8,8 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Date</th>
-            <th scope="col">CoefficientType</th>
             <th scope="col">Coefficient</th>
+            <th scope="col">CoefficientType</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
