@@ -7,11 +7,14 @@
             @csrf
             <div>
                 <div class="form-group mt-2">
-                    <select name="attribute_id" class="form-select">
-                        @foreach (\App\Models\Attribute::get() as $attribute)
-                                <option value={{$attribute->id}} @if ($attribute->id==$attribute_value->attribute_id) select @endif> {{$attribute->title}} </option>
-                        @endforeach
-                    </select>
+                    <label class="col-sm-2 control-label" for="title">Attribute</label>
+                    <div class="col-sm-10">
+                        <select name="attribute_id" class="form-select">
+                            @foreach (\App\Models\Attribute::get() as $attribute)
+                                    <option value={{$attribute->id}} @if ($attribute->id==$attribute_value->attribute_id) selected @endif> {{$attribute->title}} </option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group mt-2">
                     <label class="col-sm-2 control-label" for="title">Title</label>
